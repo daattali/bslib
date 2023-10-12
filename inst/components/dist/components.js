@@ -687,7 +687,10 @@
         ev.preventDefault();
         this.toggle("toggle");
       });
-      (_a = toggle.querySelector(".collapse-icon")) == null ? void 0 : _a.addEventListener("transitionend", () => this._finalizeState());
+      (_a = toggle.firstElementChild) == null ? void 0 : _a.addEventListener(
+        "transitionend",
+        () => this._finalizeState()
+      );
     }
     /**
      * Initialize nested sidebar counters.
